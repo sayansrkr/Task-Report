@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#eaf4f4;
+}
+.container{
+    
+    background-color:#fff;
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    min-height: 100vh;
+    border-radius: 5px;
+    
+}
+.container h2{
+    
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;   
+    color: #8f2d56;
+    
+}
+
+
+.text-area{
+    display: flex;
+    flex-direction: column;   
+}
+input,button,textarea{
+    padding: 0.8em;
+    margin: .4em;
+    border-radius: 5px;
+    border: 1px solid rgba(164, 162, 162, 0.526);
+    font-size:1em;
+    font-weight: 400;
+    font-family:sans-serif;
+    outline: none;  
+}
+button{
+    background-color: rgba(51, 51, 246, 0.756);
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+button:hover{
+    background-color: blue;
+}
+.record{
+    display: flex;
+    flex-direction: row;
+    margin: 1.6em;
+    align-items: center;
+    padding: 1.4em;
+    background-color:#eaf4f4f4;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family:sans-serif;
+    font-weight: 400;
+   border: 1px solid rgba(0, 0, 0, 0.362);
+   word-wrap:break-word;
+   
+
+}
+.record span{
+    color: rgba(0, 0, 0, 0.593);
+}
+.record div{
+    width: 100%;
+}
+
+.record .d-btn{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    padding: 0.3rem;
+}
+
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+
+ }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+    .container h2{    
+        font-size: 2rem;
+        }
+        .record{
+            font-size: 1rem;
+        }
+        input,button,textarea{
+            font-size: 1rem;
+        }
+
+ }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    .container h2{    
+        font-size: 1.5rem;
+        }
+        .record{
+            font-size: .8rem;
+        }
+        input,button,textarea{
+            font-size: 1rem;
+        }
+
+ }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    .container h2{    
+        font-size: 0.8rem;
+        }
+        .record{
+            font-size: 0.4rem;
+        }
+        input,button,textarea{
+            font-size: 0.5rem;
+        }
+
+ }
+
+
